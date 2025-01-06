@@ -20,9 +20,8 @@ function countCats(matrix) {
 
   for (let i = 0; i < columnCount; i++) {
     for (let k = 0; k < matrix.length; k++) {
-      if (matrix[k][i] === 0) {
-        countCats++;
-        break;
+      if (matrix[k][i] === '^^') {
+        countCats += 1;
       }
     }
   }
